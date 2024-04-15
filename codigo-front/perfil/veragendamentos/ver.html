@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamentos Abertos</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <div class="caixa">
+        <h2>Horários de Funcionamento</h2>
+        <h4>Hoje (29 de março)</h4>
+        <div class="agendamentos-list">
+            <div class="periodo">
+                <h3>Manhã</h3>
+                <ul>
+                    <li>07:00 Disponível</li>
+                    <li>08:00 Disponível</li>
+                    <li>09:00 Disponível</li>
+                    <li>10:00 Disponível</li>
+                    <li>11:00 Disponível</li>
+                </ul>
+            </div>
+            <div class="periodo">
+                <h3>Tarde</h3>
+                <ul>
+                    <li>13:00 Disponível</li>
+                    <li>14:00 Disponível</li>
+                    <li>15:00 Disponível</li>
+                    <li>16:00 Disponível</li>
+                    <li>17:00 Disponível</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Botão Voltar -->
+        <button onclick="voltar()" class="voltar-button">Voltar</button>
+    </div>
+
+    <script>
+        // Função para voltar para a página anterior
+        function voltar() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

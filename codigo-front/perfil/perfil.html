@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil do Usuário</title>
+    <link rel="stylesheet" href="styles-usuario.css">
+</head>
+<body>
+    <div class="usuario">
+        <h2>Perfil do Usuário</h2>
+        <div class="informacoes">
+            <img src="2.jpeg" alt="Foto do Usuário" class="user-avatar">
+            <p><strong>Nome:</strong> Emerson Igor de Souza</p>
+            <p><strong>Email:</strong> ermesonigor2002@gmail.com</p>
+            <p><strong>Telefone:</strong> (84) 9 9600-7699</p>
+        </div>
+        <div class="botoes">
+            <button onclick="redirecionarParaMarcarAgendamento()">Marcar Agendamento</button>
+            <button onclick="verAgendamentosAbertos()">Ver Agendamentos Abertos</button>
+            <button onclick="verMeusAgendamentos()">Ver Meus Agendamentos</button>
+            <button onclick="sair()">Sair</button>
+        </div>
+    </div>
+    
+    <script>
+        function redirecionarParaMarcarAgendamento() {
+            window.location.href = "/perfil/marcaragendamentos/marcar_agendamento.html";
+        }
+
+        function verAgendamentosAbertos() {
+            window.location.href = "/perfil/veragendamentos/ver.html";
+        }
+
+        function verMeusAgendamentos() {
+            window.location.href = "/perfil/meusagendamentos/meus.html";
+        }
+
+        function sair() {
+            window.location.href = "login/index.html";
+        }
+    </script>
+</body>
+</html>

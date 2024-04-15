@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abrir Agenda</title>
+    <link rel="stylesheet" href="styles-abrir-agendamentos.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Abrir Agenda do Dia</h2>
+        <h4>Hoje (29 de março)</h4>
+        <div class="horarios">
+            <div class="horarios-manha">
+                <h3>Manhã</h3>
+                <div class="horario-disponivel" data-horario="07:00">07:00</div>
+                <div class="horario-disponivel" data-horario="08:00">08:00</div>
+                <div class="horario-disponivel" data-horario="09:00">09:00</div>
+                <div class="horario-disponivel" data-horario="10:00">10:00</div>
+                <div class="horario-disponivel" data-horario="11:00">11:00</div>
+            </div>
+            <div class="horarios-tarde">
+                <h3>Tarde</h3>
+                <div class="horario-disponivel" data-horario="13:00">13:00</div>
+                <div class="horario-disponivel" data-horario="14:00">14:00</div>
+                <div class="horario-disponivel" data-horario="15:00">15:00</div>
+                <div class="horario-disponivel" data-horario="16:00">16:00</div>
+                <div class="horario-disponivel" data-horario="17:00">17:00</div>
+            </div>
+        </div>
+        <button id="abrir-button">Abrir Agendamento</button>
+
+        <!-- Botão Voltar -->
+        <button onclick="voltar()" class="voltar-button">Voltar</button>
+    </div>
+
+    <script>
+        // Função para voltar para a página anterior
+        function voltar() {
+            window.history.back();
+        }
+
+        // Adiciona a classe 'selecionado' ao clicar em um horário
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('.horario-disponivel').forEach(item => {
+                item.addEventListener('click', event => {
+                    event.target.classList.toggle('selecionado');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

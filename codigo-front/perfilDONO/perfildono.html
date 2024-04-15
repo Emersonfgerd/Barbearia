@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil do Profissional</title>
+    <link rel="stylesheet" href="styles-dono.css">
+</head>
+<body>
+    <div class="dono">
+        <h2>Perfil do Profissional</h2>
+        <div class="informacoes">
+            <img src="2.jpeg" alt="Foto do Usuário" class="user-avatar">
+            <p><strong>Nome:</strong> Emerson Igor de Souza</p>
+            <p><strong>Cargo:</strong> Cabeleireiro</p>
+            <p><strong>Email:</strong> ermesonigor2002@gmail.com</p>
+            <p><strong>Telefone:</strong> (84) 9 9600-7699</p>
+        </div>
+        <div class="botoes">
+            <button onclick="redirecionarParaAbrirAgendamento()">Abrir Agenda</button>
+            <button onclick="verAgendamentosDoDia()">Visualizar Agendamentos</button>
+        </div>
+    </div>
+    
+    <script>
+        function redirecionarParaAbrirAgendamento() {
+            window.location.href = "/perfilDONO/abriragendamentos/abrir_agendamentos.html";
+        }
+
+        function verAgendamentosDoDia() {
+            window.location.href = "/perfilDONO/veragendamentos/veragendamentos.html";
+        }
+    </script>
+</body>
+</html>

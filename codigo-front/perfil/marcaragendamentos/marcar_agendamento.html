@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcar Agendamento</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Marcar Agendamento</h2>
+        <form id="marcar-agendamento-form">
+            <div class="form-group">
+                <label for="horario">Horários Disponíveis:</label>
+                <select id="horario" name="horario">
+                    <option value="07:00">07:00</option>
+                    <option value="08:00">08:00</option>
+                    <option value="09:00">09:00</option>
+                    <option value="10:00">10:00</option>
+                    <option value="11:00">11:00</option>
+                    <option value="11:00">----</option>
+                    <option value="13:00">13:00</option>
+                    <option value="14:00">14:00</option>
+                    <option value="15:00">15:00</option>
+                    <option value="16:00">16:00</option>
+                    <option value="17:00">17:00</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="tipo-servico">Tipo de Serviço:</label>
+                <select id="tipo-servico" name="tipo-servico">
+                    <option value="cabelo">Cabelo (R$15,00)</option>
+                    <option value="barba">Barba (R$10,00)</option>
+                    <option value="cabelo-barba">Cabelo e Barba (R$25,00)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="descricao">Descrição:</label>
+                <textarea id="descricao" name="descricao" rows="4"></textarea>
+            </div>
+            <button type="submit" id="agendar-button">Agendar</button>
+        </form>
+        
+        <!-- Botão Voltar -->
+        <button onclick="window.history.back()" class="voltar-button">Voltar</button>
+    </div>
+</body>
+</html>

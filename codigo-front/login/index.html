@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <form id="login-form">
+            <h2>Login</h2>
+            <div class="form-group">
+                <label for="username">E-mail:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" id="login-button">Entrar</button>
+            <button type="button" onclick="window.location.href='/cadastro/cadastro.html'" class="btn-cadastrar">Cadastrar</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("login-form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Impede o envio do formulário padrão
+    
+            // Obter valores dos campos de entrada
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+    
+            // Simular verificação de credenciais
+            if (username === "usuario" && password === "senha1") {
+                // Redireciona para o perfil do dono
+                window.location.href = "/perfilDONO/perfildono.html"; // Substitua pelo caminho correto para o perfil do dono
+            } else if (username === "usuario" && password === "senha") {
+                // Credenciais corretas, redireciona para a página do perfil do usuário
+                window.location.href = "/perfil/perfil.html"; // Substitua pelo caminho correto para o perfil do usuário
+            } else {
+                // Credenciais incorretas, exibe mensagem de erro
+                alert("Usuário ou senha incorretos. Por favor, tente novamente.");
+            }
+        });
+    </script>
+    
+</body>
+</html>

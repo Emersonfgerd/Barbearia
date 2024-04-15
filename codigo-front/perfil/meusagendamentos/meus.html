@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Agendamentos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="caixa">
+        <h2>Meus Agendamentos</h2>
+        <div class="agendamento">
+            <h3>Agendamento: </h3>
+            <p>Serviço: Cabelo e Barba</p>
+            <p>Horário: 10:00</p>
+            <p>Valor: R$25,00</p>
+        </div>
+        
+        <!-- Botão Voltar -->
+        <button onclick="voltar()" class="voltar-button">Voltar</button>
+    </div>
+
+    <script>
+        // Função para voltar para a página anterior
+        function voltar() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

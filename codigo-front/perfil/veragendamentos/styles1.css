@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.caixa {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 800px;
+    padding: 30px;
+}
+
+.caixa h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.caixa h4 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.agendamentos-list {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.periodo {
+    flex-basis: 45%; 
+}
+
+.periodo h3 {
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+ul li:hover {
+    background-color: #00b300;
+}
+
+.voltar-button {
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.voltar-button:hover {
+    background-color: #0056b3;
+}

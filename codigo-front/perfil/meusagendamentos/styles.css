@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.caixa {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 800px;
+    padding: 30px;
+}
+
+.caixa h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.agendamento {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.agendamento h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.agendamento p {
+    margin: 8px 0;
+    color: #555;
+}
+
+/* Botão Voltar */
+.voltar-button {
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.voltar-button:hover {
+    background-color: #0056b3;
+}

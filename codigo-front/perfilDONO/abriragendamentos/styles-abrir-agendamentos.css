@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 800px;
+    padding: 30px;
+}
+
+.container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.container .horarios {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .horarios-manha,
+.container .horarios-tarde {
+    flex-basis: 45%;
+}
+
+.container .horarios-manha h3,
+.container .horarios-tarde h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.container .horario-disponivel {
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.container .horario-disponivel:hover {
+    background-color: #00b300;
+}
+
+.container .horario-disponivel.selecionado {
+    background-color: #00b300; /* Verde quando selecionado */
+}
+
+
+
+#abrir-button {
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#abrir-button:hover {
+    background-color: #0056b3;
+}
+
+.voltar-button {
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.voltar-button:hover {
+    background-color: #0056b3;
+}
